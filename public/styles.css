@@ -1,0 +1,146 @@
+:root{
+    --primary: #FAA70C;
+    --secondary: #1907FA;
+}
+
+/*Structure */
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    background: red;
+}
+
+.athlete {
+    padding: 10px;
+    margin: 10px;
+    background: salmon;
+    border-radius: 5px;
+}
+
+.athlete img{
+    max-width: 90%;
+    display: block;
+    margin: auto;
+}
+
+#athlete-details-column{
+    padding: 10px;
+    margin: 10px;
+    background: salmon;
+    border-radius: 5px;
+}
+
+#add-link{
+    font-size: 2em;
+    border: 1px solid black;
+}
+
+#edit-link {
+    float: right;
+    margin-right: 10px;
+}
+
+#delete-link{
+    float: right;
+}
+
+#add-edit-athlete-container{
+    padding: 10px;
+    margin: 10px;
+    background: lightcoral;
+    border-radius: 5px;
+}
+
+/*Form*/
+
+label{
+    display: block;
+}
+
+.inline{
+    display: inline;
+}
+#team-p input{
+    margin-top: 5px;
+}
+
+#add-team{
+    color: darkred;
+    font-size: 0.75em;
+    text-align: right;
+}
+
+/*Model*/
+
+#modal-background{
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100;
+    overflow: scroll;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dialog{
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid silver;
+    width: 100%;
+}
+
+.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Typography */
+#main-nav-item{
+    font-size: 1.2em;
+}
+
+a{
+    text-decoration: none;
+    color: crimson;
+}
+
+.hidden{
+    display: none;
+}
+
+.transparent{
+    opacity: 0;
+}
+
+/* Larger Resolution */
+
+@media (min-width: 600px){
+    .columns{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .two-columns div{
+        flex:1
+    }
+    .athlete{
+        width: 25%;
+    }
+    #add-edit-recipe-container{
+        max-width: 30%;
+        margin: auto;
+    }
+}
